@@ -33,7 +33,7 @@ SOON
 ## Test case
 Main menu
 
-(https://github.com/syahruaru/SuperCashier-PacmannPythonProject/blob/main/img/main%20menu.png?raw=true)
+![Alt text] (https://github.com/syahruaru/SuperCashier-PacmannPythonProject/blob/main/img/main%20menu.png?raw=true)
 
 test case 1
 
