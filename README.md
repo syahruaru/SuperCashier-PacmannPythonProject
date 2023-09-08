@@ -32,7 +32,9 @@ SOON
 
 ## Test case
 Main menu
-https://github.com/syahruaru/SuperCashier-PacmannPythonProject/blob/main/img/main%20menu.png?raw=true
+
+(https://github.com/syahruaru/SuperCashier-PacmannPythonProject/blob/main/img/main%20menu.png?raw=true)
+
 test case 1
 
 test case 2
