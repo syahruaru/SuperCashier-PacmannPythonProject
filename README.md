@@ -4,7 +4,7 @@
 Project Membuat Kasir self-service, pembeli dapat menginputkan nama barang, jumlah barang, dan harga barang. Hasil akhirnya adalah total harga yang harus dibayarkan pada suatu transaksi.
 
 ## Deskripsi Script
-Modul.py berisikan class yang memiliki beberapa method. Method berisikan fungsi-fungsi terkait kasir self-service.
+Modul.py berisikan class yang memiliki beberapa method. Method berisikan fungsi-fungsi terkait kasir self-service yang bernama e-Warung.
 1. fungsi mainMenu digunakan untuk menampilkan navigasi menu pada kasir
 2. fungsi addItem digunakan untuk menambahkan barang (nama, harga dan jumlah barang)
 3. fungsi updateItem akan mengarahkan pada opsi untuk mengubah nama, harga atau jumlah barang
@@ -33,12 +33,22 @@ SOON
 ## Test case
 Main menu
 
-![Alt text] (https://github.com/syahruaru/SuperCashier-PacmannPythonProject/blob/main/img/main%20menu.png?raw=true)
+![aaa](https://github.com/syahruaru/SuperCashier-PacmannPythonProject/blob/main/img/main%20menu.png?raw=true)
 
 test case 1
 
+![Alt text](https://github.com/syahruaru/SuperCashier-PacmannPythonProject/blob/main/img/test%20case%201.png?raw=true)
+![Alt text](https://github.com/syahruaru/SuperCashier-PacmannPythonProject/blob/main/img/test%20case%201_2.png?raw=true)
+
 test case 2
+
+![Alt text](https://github.com/syahruaru/SuperCashier-PacmannPythonProject/blob/main/img/test%20case%202.png?raw=true)
 
 test case 3
 
+![Alt text](https://github.com/syahruaru/SuperCashier-PacmannPythonProject/blob/main/img/test%20case%203.png?raw=true0)
+
 test case 4
+
+![Alt text](https://github.com/syahruaru/SuperCashier-PacmannPythonProject/blob/main/img/test%20case%204.png?raw=true)
+![Alt text](https://github.com/syahruaru/SuperCashier-PacmannPythonProject/blob/main/img/test%20case%204_2.png?raw=true)
