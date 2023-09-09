@@ -56,10 +56,9 @@ class Transactions():
         if question == 'Y' or question == 'y':
             self.addItem()
         elif  question == 'N' or question =='n':
-            #os.system('cls')
             print("")
             self.mainMenu()
-            #os.system('cls')
+
         else:
             print("Terima kasih")
             exit()
@@ -99,16 +98,13 @@ class Transactions():
         Method for update item name,
         update name from user
         '''
-#         print("Berikut daftar belanjaan anda:")
-#         print(tabulate(self.data_barang, headers="keys"))
-#         print("")
         
         program = True
         while program:
             item = input("Nama Barang yang diganti: ")
             if item in self.dataBarang.get("Nama Barang"):
                 newItem = input("Masukan nama barang baru: ")
-                idxItem = self.data_barang['Nama Barang'].index(item)
+                idxItem = self.dataBarang['Nama Barang'].index(item)
                 self.dataBarang['Nama Barang'][idxItem] = newItem
                 print(f"Barang {item} diubah menjadi {newItem}")
                 print("")
@@ -125,10 +121,7 @@ class Transactions():
         method for update item price,
         price input from user
         '''
-#         print("Berikut daftar belanjaan anda:")
-#         print(tabulate(self.data_barang, headers="keys"))
-#         print("")
-        
+
         program = True
         while program:
             item = input("Nama Barang yang diganti: ")
@@ -151,10 +144,6 @@ class Transactions():
         method for updet amount item,
         item input from user
         '''
-#         print("Berikut daftar belanjaan anda:")
-#         print(tabulate(self.data_barang, headers="keys"))
-#         print("")
-        
         program =True
         while program:
             item = input("Nama Barang yang diganti: ")
@@ -274,12 +263,12 @@ class Transactions():
         print("Selamat Datang di e-Warung!")
         print("")
         print("Select Menu:")
-        print("Masukan Barang (1)")
+        print("Masukan Barang (1)") #ini menuju fungsi tambah item
         print("Ubah Barang (2)") #ini fungsi update --> update nama/harga/jumlah, kemudian lanjutkan ke fungsi main()
         print("Hapus Barang (3)") #ini fungsi delete
         print("Kosongkan Keranjang (4)") #ini fungsi reset
-        print("Cek Daftar Belanjaan (5)") #ini fungsi cek order --> total price
-        print("Lihat Total Harga Belanjaan (6)")
+        print("Cek Daftar Belanjaan (5)") #ini fungsi cek order 
+        print("Lihat Total Harga Belanjaan (6)") #ini fungsi cek total order
         print("Keluar Toko  (7)")  #ini mengakhiri kasir
         print("")
         inputNumber = input("Input Menu Number: ") # pilih  menu yang diinginkan.
@@ -299,4 +288,3 @@ class Transactions():
         elif inputNumber == '7':
             print("Terima kasih")
             exit()
-        
