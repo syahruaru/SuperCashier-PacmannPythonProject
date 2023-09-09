@@ -24,7 +24,7 @@ class Transactions():
         '''
         method for adding item from user,
         input item name, check type of input data from user,
-        item will append to data_barang dictionary
+        item will append to dataBarang dictionary
         '''
 
         barang = input("Nama item yang dibeli: ")
@@ -174,7 +174,6 @@ class Transactions():
         while program:
             item = input("Nama Barang yang dihapus: ")
             if item in self.dataBarang.get("Nama Barang"):
-                # new_item = input("Masukan jumlah pembelian yang sesuai: ")
                 idxItem = self.dataBarang['Nama Barang'].index(item)
                 for key in self.dataBarang.keys():
                     del self.dataBarang[key][idxItem]
@@ -185,7 +184,6 @@ class Transactions():
 
             else:
                 print("Nama barang tidak ditemukan")
-        #self.mainMenu()
         
         
     def resetItem(self):
@@ -234,7 +232,6 @@ class Transactions():
         self.listTotal = [self.listHarga[i] * self.listJumlah[i] for i in range(len(self.listHarga))]
         total = sum(self.listTotal)
         print("")
-        #print(f"Total Belanjaan anda Rp{total}")
         if total > 500000:
             total = total - (total*10/100)
             print(f"Selamat anda mendapatkan diskon 10% Total Belanjaan anda Rp{total}")
