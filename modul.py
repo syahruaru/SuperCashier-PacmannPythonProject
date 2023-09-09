@@ -26,7 +26,6 @@ class Transactions():
         input item name, check type of input data from user,
         item will append to dataBarang dictionary
         '''
-
         barang = input("Nama item yang dibeli: ")
         program = True
         while program:
@@ -58,7 +57,6 @@ class Transactions():
         elif  question == 'N' or question =='n':
             print("")
             self.mainMenu()
-
         else:
             print("Terima kasih")
             exit()
@@ -71,14 +69,12 @@ class Transactions():
         '''
         print("Berikut daftar belanja anda:")
         print(tabulate(self.dataBarang, headers="keys"))
-
         print("")
         print("Pilih opsi:")
         print("Ganti nama barang (1)")
         print("Ganti harga barang (2)")
         print("Ganti jumlah barang (3)")
         print("")
-        
         
         inputNumber = input("Masukan opsi: ") # pilih  menu yang diinginkan.
         if inputNumber == '1':
@@ -98,7 +94,6 @@ class Transactions():
         Method for update item name,
         update name from user
         '''
-        
         program = True
         while program:
             item = input("Nama Barang yang diganti: ")
@@ -181,7 +176,6 @@ class Transactions():
                 print(tabulate(self.dataBarang, headers="keys"))
                 print("")
                 self.mainMenu()
-
             else:
                 print("Nama barang tidak ditemukan")
         
@@ -203,6 +197,7 @@ class Transactions():
                             "Harga Barang": self.listHarga, 
                             "Jumlah Barang": self.listJumlah}
         self.mainMenu()
+
     
     def checkItem(self):
         '''
@@ -247,7 +242,6 @@ class Transactions():
         else:
             print(f"Total Belanjaan anda Rp{total}")
             print("")
-        
         self.mainMenu()
         
 
