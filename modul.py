@@ -121,7 +121,7 @@ class Transactions():
         while program:
             item = input("Nama Barang yang diganti: ")
             if item in self.dataBarang.get("Nama Barang"):
-                newItem = input("Masukan Harga barang baru: ")
+                newItem = int(input("Masukan Harga barang baru: "))
                 idxItem = self.dataBarang['Nama Barang'].index(item)
                 self.dataBarang['Harga Barang'][idxItem] = newItem
                 print(f"Harga {item} diubah menjadi {newItem}")
@@ -143,7 +143,7 @@ class Transactions():
         while program:
             item = input("Nama Barang yang diganti: ")
             if item in self.dataBarang.get("Nama Barang"):
-                newItem = input("Masukan jumlah pembelian yang sesuai: ")
+                newItem = int(input("Masukan jumlah pembelian yang sesuai: "))
                 idxItem = self.dataBarang['Nama Barang'].index(item)
                 self.dataBarang['Jumlah Barang'][idxItem] = newItem
                 print(f"Jumlah barang sebelumnya {item}, diubah menjadi {newItem}")
