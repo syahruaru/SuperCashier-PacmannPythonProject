@@ -1,4 +1,5 @@
 from tabulate import tabulate
+import os
 
 class Transactions():
     
@@ -85,8 +86,8 @@ class Transactions():
             self.updateJumlah()
         else:
             print("")
-            print("terima Kasih")
-            exit()
+            print("Salah input, silahkan ulangi")
+            self.mainMenu()
             
             
     def updateNama(self):
@@ -196,7 +197,13 @@ class Transactions():
         self.dataBarang = {"Nama Barang": self.listBarang, 
                             "Harga Barang": self.listHarga, 
                             "Jumlah Barang": self.listJumlah}
-        self.mainMenu()
+        
+        backToMainMenu = input("Ketik M untuk kembali ke main menu: ")
+        if backToMainMenu == 'm' or 'M':
+            self.mainMenu()
+        else:
+            print("salah input, silahkan ulang kembali")
+            exit()
 
     
     def checkItem(self):
@@ -210,11 +217,18 @@ class Transactions():
         if pesanan == tabulate(self.dataBarang, headers="keys"):
             print("Pesanan Sesuai")
             print("")
-            self.mainMenu()
-        elif pesanan != tabulate(self.dataBarang, headers="keys"):
+
+        else: 
+            pesanan != tabulate(self.dataBarang, headers="keys")
             print("Pesanan tidak Sesuai")
             print("")
+            
+        backToMainMenu = input("Ketik M untuk kembali ke main menu: ")
+        if backToMainMenu == 'm' or 'M':
             self.mainMenu()
+        else:
+            print("salah input, silahkan ulang kembali")
+            exit()
     
     
     def totalItem(self):
@@ -242,7 +256,13 @@ class Transactions():
         else:
             print(f"Total Belanjaan anda Rp{total}")
             print("")
-        self.mainMenu()
+            
+        backToMainMenu = input("Ketik M untuk kembali ke main menu: ")
+        if backToMainMenu == 'm' or 'M':
+            self.mainMenu()
+        else:
+            print("salah input, silahkan ulang kembali")
+            exit()
         
 
     def mainMenu(self):
@@ -250,6 +270,8 @@ class Transactions():
         method to dispaly main menu,
         main menu provide navigator menu 
         '''
+        # Membersihkan tampilan terminal di Windows
+        os.system('cls')
         print("")
         print("Selamat Datang di e-Warung!")
         print("")
